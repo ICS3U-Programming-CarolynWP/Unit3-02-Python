@@ -5,6 +5,8 @@
 # Displays a message if they guess the correct number
 # (which is 8), Displays another message if they do not
 
+# to import the correct number constant
+import constant
 
 def main():
 
@@ -15,11 +17,11 @@ def main():
     guess = int(input("Guess a number between 0 and 9: "))
 
     # if statement if the user guesses it correctly
-    if guess == 8:
+    if guess == constant.CORRECT:
         print("You guessed the number correctly!")
 
     # if statement if the user does not guess it correctly
-    if guess != 8:
+    if guess != constant.CORRECT:
         print("You guessed the number incorrectly. Try again!")
 
 
